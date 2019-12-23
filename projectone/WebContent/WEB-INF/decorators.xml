@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- WEB-INF/decoratirs.xml -->
+<decorators defaultdir ="/decorator">
+    <decorator name="centerstyle" page="decorator.jsp">
+		<pattern>/model2/member/*</pattern>
+		<pattern>/model2/board/*</pattern>
+		<pattern>/model2/imageboard/*</pattern>
+		<pattern>/model2/playboard/*</pattern>
+		<pattern>/model2/warnboard/*</pattern>
+		<pattern>/model2/noticeboard/*</pattern>
+		<pattern>/model2/QAlistboard/*</pattern>
+		<pattern>/model2/commentboard/*</pattern>
+	</decorator>
+    <decorator name="fullstyle" page="decorator_1.jsp">
+		<pattern>/model2/member/list.do</pattern>
+	</decorator>
+    <decorator name="main" page="decorator2.jsp">
+		<pattern>/model2/member/main.do</pattern>
+	</decorator>
+    <decorator name="windowstyle" page="decorator_window.jsp">
+		<pattern>/model2/member/id*</pattern>
+		<pattern>/model2/member/pw*</pattern>
+		<pattern>/model2/member/password*</pattern>
+	</decorator>
+<!-- 	<decorator name="member" page="decorator.jsp">
+		<pattern>/model2/member/*</pattern>
+	</decorator>
+	<decorator name="board" page="decorator.jsp">
+		<pattern>/model2/board/*</pattern>
+	</decorator> -->
+	<excludes>
+
+	<!-- 디자인 필요없는 부분을 적어줌 -->
+	</excludes>
+</decorators>
